@@ -1,0 +1,22 @@
+
+---
+import Contacts from "./Contacts.astro"
+import TextoPresentacion from "./TextoPresentacion.astro"
+---
+
+<div    id="AcercaDeMi"
+    class="max-w-screen-xl flex  px-4 mx-auto h-1/2 w-3/4 box-border border-8 m-40 mb-80 p-10 "
+>
+<!-- Foto mia -->
+    <div class="container p-4 flex flex-wrap w-50 h-50">
+        <img src="/src/images/ChrisProfile(1).png" />
+    </div>
+    <!-- Texto presentación -->
+    <TextoPresentacion/>
+    
+    <!-- Contactos -->
+    <div class="p-4">
+        <div class="text-4xl font-extrabold">Contáctame</div>
+        <Contacts/>
+    </div>
+</div>
