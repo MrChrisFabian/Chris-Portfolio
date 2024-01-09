@@ -18,7 +18,7 @@ const { descrip } = Astro.props;
 <div
     class=" max-w-sm m-4 border rounded-lg shadow bg-orange-500 border-gray-900"
 >
-    <a href={webLink}>
+    <a href={webLink} target="_blank">
         <img class="rounded-t-lg" src={src} alt={alt} />
     </a>
     <div class="p-5">
@@ -31,6 +31,7 @@ const { descrip } = Astro.props;
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-black">{descrip}</p>
         <a
+            target="_blank"
             href={link}
             class="z-0 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-600 bg-white rounded-lg focus:ring-4 focus:outline-black focus:black dark:bg-white dark:hover:bg-stone-200 dark:focus:ring-black"
         >
