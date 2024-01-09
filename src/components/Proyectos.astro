@@ -1,0 +1,40 @@
+---
+interface Props {
+    alt: string;
+    src: string;
+    text: string;
+    descrip: string;
+    link: string;
+    webLink: string;
+}
+const { webLink } = Astro.props;
+const { link } = Astro.props;
+const { alt } = Astro.props;
+const { src } = Astro.props;
+const { text } = Astro.props;
+const { descrip } = Astro.props;
+---
+
+<div
+    class="z-0 max-w-sm m-4 border rounded-lg shadow bg-orange-500 border-gray-900"
+>
+    <a href={webLink}>
+        <img class="rounded-t-lg" src={src} alt={alt} />
+    </a>
+    <div class="p-5">
+        <a>
+            <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"
+            >
+                {text}
+            </h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-black">{descrip}</p>
+        <a
+            href={link}
+            class="z-0 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-orange-600 bg-white rounded-lg focus:ring-4 focus:outline-black focus:black dark:bg-white dark:hover:bg-stone-200 dark:focus:ring-black"
+        >
+            Conocer Más
+        </a>
+    </div>
+</div>
